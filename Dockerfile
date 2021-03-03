@@ -3,10 +3,10 @@ FROM registry.redhat.io/ubi8/go-toolset:1.14.12 as builder
 
 #RUN echo $PATH
 #RUN echo $GOPATH
-RUN wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
-RUN tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz
-ENV PATH $PATH:/usr/local/go/bin
-RUN go version
+#RUN wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+#RUN tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz
+#ENV PATH $PATH:/usr/local/go/bin
+#RUN go version
 #RUN echo $PATH
 #RUN echo $HOME
 #RUN ls -l /usr/local
