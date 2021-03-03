@@ -1,5 +1,5 @@
-#FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as builder
-FROM golang:latest as builder
+FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as builder
+#FROM golang:latest as builder
 
 #RUN echo $PATH
 #RUN echo $GOPATH
