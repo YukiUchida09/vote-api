@@ -1,6 +1,9 @@
 FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as builder
 
+RUN echo $PATH
+RUN echo $GOPATH
 ENV PATH $PATH:/usr/local/go/bin
+
 
 WORKDIR /build
 ADD . /build/
