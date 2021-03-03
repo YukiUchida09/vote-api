@@ -4,6 +4,7 @@ RUN echo $PATH
 RUN echo $GOPATH
 ENV PATH $PATH:/usr/local/go/bin
 RUN echo $PATH
+RUN echo $HOME
 RUN ls -l /usr/local
 RUN go version
 
