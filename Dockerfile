@@ -3,12 +3,13 @@ FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:latest as
 
 #RUN echo $PATH
 #RUN echo $GOPATH
-#ENV PATH $PATH:/usr/local/go/bin
+ENV PATH $PATH:/usr/local/go/bin
 #RUN echo $PATH
 #RUN echo $HOME
 #RUN ls -l /usr/local
 #RUN ls -l /opt/app-root/src
 #RUN go version
+RUN source .profile
 
 WORKDIR /build
 ADD . /build/
