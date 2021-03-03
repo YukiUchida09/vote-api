@@ -6,6 +6,7 @@ ENV PATH $PATH:/usr/local/go/bin
 RUN echo $PATH
 RUN echo $HOME
 RUN ls -l /usr/local
+RUN ls -l /opt/app-root/src
 RUN go version
 
 WORKDIR /build
